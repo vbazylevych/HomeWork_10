@@ -4,7 +4,6 @@ import goit.javaonline3.homework10.MyScanner;
 import goit.javaonline3.homework10.ReadFromFile;
 import goit.javaonline3.homework10.WriteToFile;
 
-import java.util.Scanner;
 
 /**
  * Created by Ler4enko on 16.07.2016.
