@@ -12,6 +12,6 @@ public class ReadFromFileTest {
 
     @Test
     public void testReadFromFile() throws Exception {
-        assertEquals("abc ЭЮЯ #", ReadFromFile.readFromFile("TestData.txt"));
+        assertEquals("abc WXYZ #", ReadFromFile.readFromFile("TestData.txt"));
     }
 }

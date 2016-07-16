@@ -9,17 +9,16 @@ import java.io.IOException;
 public class ReadFromFile {
 
     public static String readFromFile(String fileName)  {
-        Ceasar ceasar = new Ceasar();
+
         StringBuilder stringBuilder = new StringBuilder();
 
-        try(FileInputStream fileInputStrim = new FileInputStream(fileName)) {
+        try(FileInputStream fileInputStream = new FileInputStream(fileName)) {
             int i = -1;
 
-            while((i = fileInputStrim.read()) != -1) {
+            while((i = fileInputStream.read()) != -1) {
                 stringBuilder.append((char)i);
             }
-
-            return ceasar.decrypt(stringBuilder);
+            return stringBuilder.toString();
         } catch(IOException ex){
             System.out.println(ex.getMessage());
             return "";

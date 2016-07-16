@@ -13,7 +13,7 @@ public class WriteToFileTest {
 
     @Test
     public void testWriteToFileEncodedText() throws Exception {
-        WriteToFile.writeToFileEncodedText("def abc #");
+        WriteToFile.writeToFile("def abc #");
         assertEquals("def abc #", ReadFromFile.readFromFile("File.txt"));
     }
 }

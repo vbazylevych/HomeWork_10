@@ -8,12 +8,10 @@ import java.io.IOException;
  */
 public class WriteToFile {
 
-   public static void writeToFileEncodedText(String text)  {
-       Ceasar ceasar = new Ceasar();
+   public static void writeToFile(String text)  {
 
        try(FileOutputStream fileOutputStream = new FileOutputStream("File.txt")) {
-           String encriptedText = ceasar.encript(text);
-           byte[] buffer = encriptedText.getBytes();
+           byte[] buffer = text.getBytes();
 
            fileOutputStream.write(buffer, 0, buffer.length);
        } catch(IOException ex) {
