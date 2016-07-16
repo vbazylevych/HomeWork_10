@@ -17,7 +17,7 @@ public class Runner {
         WriteToFile.writeToFileEncodedText(MyScanner.getString());
 
         System.out.println("Was read from file:");
-        System.out.println(ReadFromFile.readFromFile("File1.txt"));
+        System.out.println(ReadFromFile.readFromFile("File.txt"));
 
         MyScanner.close();
     }
