@@ -86,3 +86,10 @@ public class Ceasar {
         return shift;
     }
 }
+
+//why not private fields
+
+//public static final ArrayList<Character> artificialAlphabet = new ArrayList<Character>();
+//you should not write <Character> twice
+
+//Ceasar, encript, encriptedText, findNewSymbolPositionForEncripting - grammar mistakes
