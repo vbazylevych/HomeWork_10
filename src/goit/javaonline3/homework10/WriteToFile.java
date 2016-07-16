@@ -21,3 +21,5 @@ public class WriteToFile {
        }
    }
 }
+
+//writeToFileEncodedText() it will be good to decompose this method
