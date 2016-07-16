@@ -29,3 +29,5 @@ public class Runner {
         MyScanner.close();
     }
 }
+
+//very uninformative console output

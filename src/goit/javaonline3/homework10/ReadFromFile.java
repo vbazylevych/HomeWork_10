@@ -25,3 +25,8 @@ public class ReadFromFile {
         }
     }
 }
+
+//int i = -1
+//magic number
+
+//fileInputStrim - grammar mistake
