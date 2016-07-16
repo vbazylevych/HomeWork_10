@@ -13,10 +13,10 @@ public class ReadFromFile {
         StringBuilder stringBuilder = new StringBuilder();
 
         try(FileInputStream fileInputStream = new FileInputStream(fileName)) {
-            int i = -1;
+            int symbolNumber = -1;
 
-            while((i = fileInputStream.read()) != -1) {
-                stringBuilder.append((char)i);
+            while((symbolNumber = fileInputStream.read()) != -1) {
+                stringBuilder.append((char)symbolNumber);
             }
             return stringBuilder.toString();
         } catch(IOException ex){

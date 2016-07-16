@@ -5,9 +5,9 @@ import java.util.ArrayList;
 /**
  * Created by Ler4enko on 16.07.2016.
  */
-public class Ceasar {
-    public static final ArrayList<Character> artificialAlphabet = new ArrayList<>();
-    public static final int shift = 3;
+public class Caesar {
+    private static final ArrayList<Character> artificialAlphabet = new ArrayList<>();
+    private static final int shift = 3;
 
     static {
 
@@ -28,7 +28,7 @@ public class Ceasar {
             int currentSymbolPosition = artificialAlphabet.indexOf(symbol);
 
             if (currentSymbolPosition >= 0) {
-                encryptedText.append(artificialAlphabet.get(findNewSymbolPositionForEncripting(currentSymbolPosition)));
+                encryptedText.append(artificialAlphabet.get(findNewSymbolPositionForEncriptyng(currentSymbolPosition)));
             } else {
                 encryptedText.append(text.charAt(i));
             }
@@ -36,7 +36,7 @@ public class Ceasar {
         return encryptedText.toString();
     }
 
-    private static int findNewSymbolPositionForEncripting(int currentSymbolPosition){
+    private static int findNewSymbolPositionForEncriptyng(int currentSymbolPosition){
 
         if (currentSymbolPosition <= artificialAlphabet.size() - shift - 1) {
             return currentSymbolPosition + 3;
@@ -53,7 +53,7 @@ public class Ceasar {
             int currentSymbolPosition = artificialAlphabet.indexOf(symbol);
 
             if (currentSymbolPosition >= 0) {
-                decryptedText.append(artificialAlphabet.get(findOldSymbolPositionForEncripting(currentSymbolPosition)));
+                decryptedText.append(artificialAlphabet.get(findOldSymbolPositionForEncriptyng(currentSymbolPosition)));
             } else {
                 decryptedText.append( text.charAt(i));
             }
@@ -61,7 +61,7 @@ public class Ceasar {
         return decryptedText.toString();
     }
 
-    private static int findOldSymbolPositionForEncripting(int currentSymbolPosition){
+    private static int findOldSymbolPositionForEncriptyng(int currentSymbolPosition){
 
         if (currentSymbolPosition <= shift - 1) {
             return artificialAlphabet.size() - shift + currentSymbolPosition;
@@ -84,6 +84,6 @@ public class Ceasar {
 //public static final ArrayList<Character> artificialAlphabet = new ArrayList<Character>();
 //you should not write <Character> twice
 
-//Ceasar, encript, encriptedText, findNewSymbolPositionForEncripting - grammar mistakes
+//Caesar, encript, encriptedText, findNewSymbolPositionForEncripting - grammar mistakes
 
 //why do you initialize the static field by constructor?
