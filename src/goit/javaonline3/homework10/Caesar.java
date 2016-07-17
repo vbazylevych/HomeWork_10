@@ -78,12 +78,3 @@ public class Caesar {
         return shift;
     }
 }
-
-//why fields are not private
-
-//public static final ArrayList<Character> artificialAlphabet = new ArrayList<Character>();
-//you should not write <Character> twice
-
-//Caesar, encript, encriptedText, findNewSymbolPositionForEncripting - grammar mistakes
-
-//why do you initialize the static field by constructor?
